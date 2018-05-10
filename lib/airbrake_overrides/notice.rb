@@ -31,7 +31,7 @@ module Airbrake
             self.backtrace.lines.each do |line|
               backtrace.line(:number => line.number,
                              :file   => line.file,
-                             :method => line.method)
+                             :method => line.method_name)
             end
           end
         end
